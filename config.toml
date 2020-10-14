@@ -187,23 +187,23 @@ disqusShortname = ""
   # Footer section
   [params.footer]
     enable = true
-    copyright = "Company Name"
+    copyright = "Robert Carollo"
 
     # Uses font awesome icons
-    [[params.footer.social]]
-      icon = "fa-twitter"
-      url= "https://www.twitter.com"
-      label = "Twitter"
+    # [[params.footer.social]]
+    #  icon = "fa-twitter"
+    #  url= "https://www.twitter.com"
+    #  label = "Twitter"
 
-    [[params.footer.social]]
-      icon = "fa-facebook"
-      url= "https://www.facebook.com"
-      label = "Facebook"
+    # [[params.footer.social]]
+    #  icon = "fa-facebook"
+    #  url= "https://www.facebook.com"
+    #  label = "Facebook"
 
-    [[params.footer.social]]
-      icon = "fa-instagram"
-      url= "https://www.instagram.com"
-      label = "Instagram"
+   # [[params.footer.social]]
+     # icon = "fa-instagram"
+     # url= "https://www.instagram.com"
+     #  label = "Instagram"
     
     [[params.footer.social]]
       icon = "fa-github"
@@ -212,10 +212,10 @@ disqusShortname = ""
 
     [[params.footer.social]]
       icon = "fa-linkedin"
-      url= "https://www.linkedin.com"
+      url= "https://www.linkedin.com/robbie-carollo"
       label = "LinkedIn"
 
-    [[params.footer.quicklinks]]
-      text = "Design: "
-      url= "https://www.html5up.net"
-      alt = "HTML5 UP"
+    # [[params.footer.quicklinks]]
+    #  text = "Design: "
+    #  url= "https://www.html5up.net"
+    #  alt = "HTML5 UP"
