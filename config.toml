@@ -174,15 +174,15 @@ disqusShortname = ""
     title = "Email"
     email = "rcarollo.mfa2021@london.edu"
 
-    # [[params.contact.phone]]
-    # title = "Phone"
-    # phone = "(+44)7917 333216"
+     [[params.contact.phone]]
+     title = "Phone"
+     phone = "(+44)7917 333216"
 
-    # [[params.contact.address]]
-    # title = "Address"
-    # street = "Regent's Park"
-    # city = "London, NW1 4SA"
-    # country = "United Kingdom"
+     [[params.contact.address]]
+     title = "Address"
+     street = "Regent's Park"
+     city = "London, NW1 4SA"
+     country = "United Kingdom"
 
   # Footer section
   [params.footer]
