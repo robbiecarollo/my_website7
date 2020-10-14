@@ -92,10 +92,10 @@ disqusShortname = ""
     # Display your showcases here.
     
     [[params.tiles.showcase]]
-      title = "Aliquam"
-      subtitle = "Ipsum Dolor Sit Amet"
-      image = "pic01.jpg"
-      url = "blogs/aliquam"
+      title = "My Favourite Place"
+      subtitle = "Norway"
+      image = "banner.jpeg"
+      url = "static/banner"
 
     [[params.tiles.showcase]]
       title = "Tempus"
@@ -138,12 +138,12 @@ disqusShortname = ""
   # Section Type Two
   [params.two]
     enable = true
-    title = "Massa libero"
-    subtitle = """Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. 
-    Mauris aliquet magna magna sed nunc rhoncus pharetra. 
-    Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. 
-    Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero.
-    Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus."""
+    title = "A Little About Me"
+    subtitle = """Bio. 
+Hi everyone. I recently moved to London in August this year from Sydney, Australia. Prior to moving to London I worked as as
+an Investment Associate at a global investment consultancy firm, and undertook a couple of internships in law and finance. 
+For my undergraduate studies I studied a Bachelor of Laws and a Bachelor of Business at the University of Technology, Sydney.
+My hobbies include everything football, formula one and hanging out with mates. """
     buttonText = "Get Started"
     url = "blogs"
 
@@ -165,7 +165,7 @@ disqusShortname = ""
     # - send a dummy email yourself to confirm your account
     # - click the confirm link in the email from www.formspree.io
     # - you're done. Happy mailing!
-    # formEmail = "example@domain.com"
+    formEmail = "rcarollo.mfa2021@london.edu"
 
     # Contact Section
     # You can add multiple emails, phone numbers, or addresses
