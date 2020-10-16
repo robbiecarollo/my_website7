@@ -98,10 +98,10 @@ disqusShortname = ""
       url = "static/banner"
 
     [[params.tiles.showcase]]
-      title = "Tempus"
-      subtitle = "Feugiat Amet Tempus"
+      title = "Homework Example"
+      #subtitle = "Feugiat Amet Tempus"
       image = "pic02.jpg"
-      url = "blogs/tempus"
+      url = "projects/Project 1"
 
     [[params.tiles.showcase]]
       title = "Magna"
@@ -139,7 +139,7 @@ disqusShortname = ""
   [params.two]
     enable = true
     title = "A Little About Me"
-    subtitle = """Bio. 
+    # subtitle = """Bio. 
 Hi everyone. I recently moved to London in August this year from Sydney, Australia. Prior to moving to London I worked as as
 an Investment Associate at a global investment consultancy firm, and undertook a couple of internships in law and finance. 
 For my undergraduate studies I studied a Bachelor of Laws and a Bachelor of Business at the University of Technology, Sydney.
