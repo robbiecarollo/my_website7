@@ -139,10 +139,11 @@ disqusShortname = ""
   [params.two]
     enable = true
     title = "A Little About Me"
-    subtitle = ""Hi everyone. I recently moved to London in August this year from Sydney, Australia. Prior to moving to London I worked as as
+    subtitle = """Bio
+Hi everyone. I recently moved to London in August this year from Sydney, Australia. Prior to moving to London I worked as as
 an Investment Associate at a global investment consultancy firm, and undertook a couple of internships in law and finance. 
 For my undergraduate studies I studied a Bachelor of Laws and a Bachelor of Business at the University of Technology, Sydney.
-My hobbies include everything football, formula one and hanging out with mates.""
+My hobbies include everything football, formula one and hanging out with mates. """
     buttonText = "Get Started"
     url = "blogs"
 
