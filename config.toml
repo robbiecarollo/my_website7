@@ -94,8 +94,8 @@ disqusShortname = ""
     [[params.tiles.showcase]]
       title = "Climate Change Homework Example"
       subtitle = "Weather Anomalies by Year"
-      image = "CopyOfweather.jpg"
-      url = "img/Projects"
+      image = "weather.jpg"
+      url = "static/banner"
 
     [[params.tiles.showcase]]
       title = "Physical Activity Homework Example"
