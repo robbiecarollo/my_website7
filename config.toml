@@ -95,13 +95,13 @@ disqusShortname = ""
       title = "My Favourite Place"
       subtitle = "Norway"
       image = "banner.jpeg"
-      url = "img/Projects"
+      url = "static/banner"
 
     [[params.tiles.showcase]]
       title = "Homework Example"
       subtitle = "Relationship between physical activity and weight"
       image = "Weight.jpg"
-      url = "img/Projects"
+      url = "static/banner"
 
     [[params.tiles.showcase]]
       title = "Magna"
@@ -125,7 +125,7 @@ disqusShortname = ""
       title = "My Favourite Football Club"
       subtitle = "FC Internazionale"
       image = "Inter.jpg"
-      url = "img/Projects"
+      url = "static/banner"
     # You can make more showcases by copy and pasting the code above
 
   [params.blog]
