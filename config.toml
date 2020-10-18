@@ -99,9 +99,9 @@ disqusShortname = ""
 
     [[params.tiles.showcase]]
       title = "Homework Example"
-      subtitle = "Feugiat Amet Tempus"
-      image = "pic02.jpg"
-      url = "projects/Project 1"
+      subtitle = "Relationship between physical activity and weight"
+      image = "Weight.jpg"
+      url = "static/banner"
 
     [[params.tiles.showcase]]
       title = "Magna"
@@ -109,17 +109,17 @@ disqusShortname = ""
       image = "pic03.jpg"
       url = "blogs/magna"
 
-    [[params.tiles.showcase]]
-      title = "Ipsum"
-      subtitle = "Nisl Sed Aliquam"
-      image = "pic04.jpg"
-      url = "blogs/ipsum"
+   # [[params.tiles.showcase]]
+   #   title = "Ipsum"
+   #   subtitle = "Nisl Sed Aliquam"
+   #   image = "pic04.jpg"
+   #   url = "blogs/ipsum"
 
-    [[params.tiles.showcase]]
-      title = "Consequat"
-      subtitle = "Ipsum Dolor Sit Amet"
-      image = "pic05.jpg"
-      url = "blogs/ipsum"
+    # [[params.tiles.showcase]]
+     # title = "Consequat"
+     # subtitle = "Ipsum Dolor Sit Amet"
+     # image = "pic05.jpg"
+    # url = "blogs/ipsum"
 
     [[params.tiles.showcase]]
       title = "My Favourite Football Club"
