@@ -92,9 +92,9 @@ disqusShortname = ""
     # Display your showcases here.
     
     [[params.tiles.showcase]]
-      title = "My Favourite Place"
-      subtitle = "Norway"
-      image = "banner.jpeg"
+      title = "Climate Change Homework Example"
+      subtitle = "Weather Anomalies by Year"
+      image = "weather.jpg"
       url = "static/banner"
 
     [[params.tiles.showcase]]
@@ -104,10 +104,10 @@ disqusShortname = ""
       url = "static/banner"
 
     [[params.tiles.showcase]]
-      title = "Magna"
-      subtitle = "Lorem Etiam Nullam"
-      image = "pic03.jpg"
-      url = "blogs/magna"
+      title = "Climate Change Homework Example 2"
+      subtitle = "Monthly Weather Anomalies"
+      image = "monthly weather.jpg"
+      url = "static/banner"
 
    # [[params.tiles.showcase]]
    #   title = "Ipsum"
