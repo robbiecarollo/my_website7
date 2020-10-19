@@ -17,7 +17,7 @@ yrbss_boxplot <- yrbss %>%
   NULL
 yrbss_boxplot
 draft: false
-image: CopyOfWeight.jpg
+image: weight.jpg
 keywords: ""
 slug: physical
 title: Physical Activity Homework Example
