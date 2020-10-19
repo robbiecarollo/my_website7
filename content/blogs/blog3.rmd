@@ -3,7 +3,7 @@ categories:
 - ""
 - ""
 date: "2017-10-31T22:26:13-05:00"
-description: ```{r, boxplot}
+description: {r, boxplot}
 
 yrbss_boxplot <- yrbss %>% 
   filter(!is.na(physical_3plus), !is.na(weight)) %>%
@@ -18,11 +18,24 @@ yrbss_boxplot <- yrbss %>%
   NULL
 
 yrbss_boxplot
-
-```
 draft: false
 image: CopyOfWeight.jpg
 keywords: ""
 slug: CopyOfWeight
 title: Physical Activity Homework Example
 ---
+{r, boxplot}
+
+yrbss_boxplot <- yrbss %>% 
+  filter(!is.na(physical_3plus), !is.na(weight)) %>%
+  ggplot(aes(x=physical_3plus, y=weight)) +
+  geom_boxplot() +
+  theme_minimal() +
+  theme(plot.title = element_text(face="bold")) +
+  labs(title = "Weight and Physical Activity", subtitle = "Increased level of physical activity means heavier people", y = "Weight (Kg)", x = "Physical activity") +
+  theme(plot.title = element_text(family = "Times New Roman", face = "bold", size = (18)),
+          axis.title = element_text(family = "Times New Roman", size = (10)),
+          axis.text = element_text(family = "Times New Roman", size = (10))) +
+  NULL
+
+yrbss_boxplot
