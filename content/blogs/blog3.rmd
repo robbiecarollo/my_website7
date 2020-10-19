@@ -19,6 +19,6 @@ yrbss_boxplot
 draft: false
 image: CopyOfWeight.jpg
 keywords: ""
-slug: CopyOfWeight
+slug: physical
 title: Physical Activity Homework Example
 ---
