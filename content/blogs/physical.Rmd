@@ -5,7 +5,7 @@ categories:
 - ""
 description: Physical Activity Homework Example
 draft: false
-image: beerphoto.jpg
+image: physical.jpg
 keywords: ""
 slug: physical
 title: Physical Activity Homework Example

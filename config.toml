@@ -100,28 +100,16 @@ disqusShortname = ""
     [[params.tiles.showcase]]
       title = "Physical Activity Homework Example"
       subtitle = "Relationship between physical activity and weight"
-      image = "Weight.jpg"
+      image = "physical.jpg"
       url = "blogs/physical"
 
     [[params.tiles.showcase]]
-      title = "Climate Change Homework Example 2"
-      subtitle = "Monthly Weather Anomalies"
-      image = "monthly weather.jpg"
-      url = "static/banner"
+      title = "Stock Analysis Homework Example"
+      subtitle = "Stock Analysis"
+      image = "stocks.jpg"
+      url = "blogs/stocks"
 
-   # [[params.tiles.showcase]]
-   #   title = "Ipsum"
-   #   subtitle = "Nisl Sed Aliquam"
-   #   image = "pic04.jpg"
-   #   url = "blogs/ipsum"
-
-    # [[params.tiles.showcase]]
-     # title = "Consequat"
-     # subtitle = "Ipsum Dolor Sit Amet"
-     # image = "pic05.jpg"
-    # url = "blogs/ipsum"
-
-    [[params.tiles.showcase]]
+     [[params.tiles.showcase]]
       title = "Beer Homework Example"
       subtitle = "Top Beer Consuming Countries"
       image = "beerphoto.jpg"
