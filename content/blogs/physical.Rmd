@@ -1,0 +1,162 @@
+
+---
+categories:
+- ""
+- ""
+description: Beer Project
+draft: false
+image: pic10.jpg
+keywords: ""
+slug: physical
+title: Beer Project
+site: blogdown::blogdown_site
+output: html_document
+---
+
+---
+title: "Session 6: Homework 3"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    theme: flatly
+    highlight: zenburn
+    number_sections: yes
+    toc: yes
+    toc_float: yes
+    code_folding: show
+---
+
+
+```{r, setup, echo=FALSE}
+knitr::opts_chunk$set(
+  message = FALSE, 
+  warning = FALSE, 
+  tidy=FALSE,     # display code as typed
+  size="small")   # slightly smaller font for code
+options(digits = 3)
+
+# default figure size
+knitr::opts_chunk$set(
+  fig.width=6.75, 
+  fig.height=6.75,
+  fig.align = "center"
+)
+```
+
+
+```{r load-libraries, echo=FALSE}
+library(tidyverse)  # Load ggplot2, dplyr, and all the other tidyverse packages
+library(mosaic)
+library(ggthemes)
+library(GGally)
+library(readxl)
+library(here)
+library(skimr)
+library(janitor)
+library(broom)
+library(tidyquant)
+library(infer)
+library(openintro)
+library(tidyquant)
+```
+
+
+# Youth Risk Behavior Surveillance
+
+Every two years, the Centers for Disease Control and Prevention conduct the [Youth Risk Behavior Surveillance System (YRBSS)](https://www.cdc.gov/healthyyouth/data/yrbs/index.htm) survey, where it takes data from high schoolers (9th through 12th grade), to analyze health patterns. You will work with a selected group of variables from a random sample of observations during one of the years the YRBSS was conducted.
+
+## Load the data
+
+This data is part of the `openintro` textbook and we can load and inspect it. There are observations on 13 different variables, some categorical and some numerical. The meaning of each variable can be found by bringing up the help file:
+
+?yrbss
+
+```{r}
+data(yrbss)
+glimpse(yrbss)
+```
+
+Before you carry on with your analysis, it's is always a good idea to check with `skimr::skim()` to get a feel for missing values, summary statistics of numerical variables, and a very rough histogram.
+
+```{r}
+skimr::skim(yrbss)
+```
+
+## Exploratory Data Analysis
+
+You will first start with analyzing the `weight` of participants in kilograms. Using visualization and summary statistics, describe the distribution of weights. How many observations are we missing weights from?
+
+```{r, eda_on_weight}
+
+sum(is.na(yrbss$weight))
+
+```
+```{r}
+
+data_tidy <- yrbss %>% 
+  filter(weight != "NA")
+
+ggplot(data_tidy, mapping = aes(x=weight)) + 
+  geom_density()+
+  theme_minimal()+
+  labs(title = "Weight Distribution", subtitle = "Positively-skewed distribution", x = "Weight (Kg)", y = "Density")+
+  theme(plot.title = element_text(family = "Times New Roman", face = "bold", size = (18)),
+          axis.title = element_text(family = "Times New Roman", size = (10)),
+          axis.text = element_text(family = "Times New Roman", size = (10)))
+```
+```{r}
+
+summary(data_tidy$weight)
+
+```
+
+Next, consider the possible relationship between a high schooler’s weight and their physical activity. Plotting the data is a useful first step because it helps us quickly visualize trends, identify strong associations, and develop research questions.
+
+```{r}
+
+ggplot(data_tidy, mapping = aes(x = weight, y = physically_active_7d))+
+  geom_point()+
+  theme_minimal()+
+  labs(title = "Weight and Physical Activity", subtitle = "Relationship between the two", x = "Weight (Kg)", y = "Days of activity per week")+
+  theme(plot.title = element_text(family = "Times New Roman", face = "bold", size = (18)),
+          axis.title = element_text(family = "Times New Roman", size = (10)),
+          axis.text = element_text(family = "Times New Roman", size = (10)))
+
+```
+
+Let’s create a new variable `physical_3plus`, which will be `yes` if they are physically active for at least 3 days a week, and `no` otherwise.
+
+  
+```{r}
+yrbss <- yrbss %>% 
+  mutate(physical_3plus = ifelse(physically_active_7d >= 3, "yes", "no"))
+
+yrbss %>% filter(!is.na(physical_3plus)) %>% 
+  group_by(physical_3plus) %>% 
+  summarise(count = n()) %>% 
+  mutate(prop= count/sum(count))
+
+```
+Can you provide a 95% confidence interval for the population proportion of high schools that are *NOT* active 3 or more days per week?
+
+  
+Make a boxplot of `physical_3plus` vs. `weight`. Is there a relationship between these two variables? What did you expect and why?
+
+```{r, boxplot}
+
+yrbss_boxplot <- yrbss %>% 
+  filter(!is.na(physical_3plus), !is.na(weight)) %>%
+  ggplot(aes(x=physical_3plus, y=weight)) +
+  geom_boxplot() +
+  theme_minimal() +
+  theme(plot.title = element_text(face="bold")) +
+  labs(title = "Weight and Physical Activity", subtitle = "Increased level of physical activity means heavier people", y = "Weight (Kg)", x = "Physical activity") +
+  theme(plot.title = element_text(family = "Times New Roman", face = "bold", size = (18)),
+          axis.title = element_text(family = "Times New Roman", size = (10)),
+          axis.text = element_text(family = "Times New Roman", size = (10))) +
+  NULL
+
+yrbss_boxplot
+
+```
+
