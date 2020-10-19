@@ -7,6 +7,6 @@ description: ""
 draft: false
 image: CopyOfInter.jpg
 keywords: ""
-slug: CopyOfInter
+slug: beer
 title: My Favourite Football Team
 ---

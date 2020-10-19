@@ -122,10 +122,10 @@ disqusShortname = ""
     # url = "blogs/ipsum"
 
     [[params.tiles.showcase]]
-      title = "My Favourite Football Club"
+      title = "Beer Homework Example"
       subtitle = "FC Internazionale"
       image = "Inter.jpg"
-      url = "static/banner"
+      url = "blogs/beer"
     # You can make more showcases by copy and pasting the code above
 
   [params.blog]

@@ -1,0 +1,89 @@
+---
+categories:
+- ""
+- ""
+date: "2017-10-31T22:42:51-05:00"
+description: Beer Project
+draft: false
+image: pic10.jpg
+keywords: ""
+slug: beer
+title: Beer Project
+site: blogdown::blogdown_site
+output: html_document
+---
+
+
+
+<p>{r, setup}
+knitr::opts_chunk$set(
+message = FALSE,
+warning = FALSE,
+tidy=FALSE, # display code as typed
+size=“small”) # slightly smaller font for code
+options(digits = 3)</p>
+<div id="default-figure-size" class="section level1">
+<h1>default figure size</h1>
+<p>knitr::opts_chunk$set(
+fig.width=6.75,
+fig.height=6.75,
+fig.align = “center”
+)</p>
+<p>{r load-libraries, warning=FALSE, message=FALSE, echo=FALSE}
+library(tidyverse) # Load ggplot2, dplyr, and all the other tidyverse packages
+library(mosaic)
+library(ggthemes)
+library(lubridate)
+library(fivethirtyeight)
+library(here)
+library(skimr)
+library(janitor)
+library(vroom)
+library(tidyquant)
+library(kableExtra)
+library(ggrepel)
+library(yaml)</p>
+</div>
+<div id="drinks" class="section level1">
+<h1>Drinks</h1>
+<div id="where-do-people-drink-the-most-beer-wine-and-spirits" class="section level2">
+<h2>Where Do People Drink The Most Beer, Wine And Spirits?</h2>
+<p>{r, load_alcohol_data}
+library(fivethirtyeight)
+data(drinks)</p>
+<p>What are the variable types? Any missing values we should worry about?</p>
+<p>{r glimpse_skim_data}
+glimpse(drinks)</p>
+<p>Make a plot that shows the top 25 beer consuming countries</p>
+<p>{r beer_plot}</p>
+<p>beer &lt;- drinks %&gt;%
+select(country, beer_servings) %&gt;%
+arrange(desc(beer_servings))</p>
+<p>top25_beer &lt;- beer %&gt;%
+head(25)</p>
+<p>ggplot(top25_beer, aes(x= beer_servings,
+y = reorder(country, beer_servings))) +
+geom_bar(stat=‘identity’)+ labs(x=“Beer Servings Consumed Per Person”,y = “Country”, title = “Top 25 Beer Consuming Countries”)</p>
+<p>Make a plot that shows the top 25 wine consuming countries</p>
+<p>{r wine_plot}</p>
+<p>wine &lt;- drinks %&gt;%
+select(country, wine_servings) %&gt;%
+arrange(desc(wine_servings))</p>
+<p>top25_wine &lt;- wine %&gt;%
+head(25)</p>
+<p>ggplot(top25_wine, aes(x= wine_servings,
+y = reorder(country, wine_servings))) +
+geom_bar(stat=‘identity’)+ labs(x=“Wine Servings Consumed Per Person”,y = “Country”, title = “Top 25 Wine Consuming Countries”)</p>
+<p>Finally, make a plot that shows the top 25 spirit consuming countries
+{r spirit_plot}
+# YOUR CODE GOES HERE</p>
+<p>spirit &lt;- drinks %&gt;%
+select(country, spirit_servings) %&gt;%
+arrange(desc(spirit_servings))</p>
+<p>top25_spirit &lt;- spirit %&gt;%
+head(25)</p>
+<p>ggplot(top25_spirit, aes(x= spirit_servings,
+y = reorder(country, spirit_servings))) +
+geom_bar(stat=‘identity’)+ labs(x=“Spirits Servings Consumed Per Person”,y = “Country”, title = “Top 25 Spirits Consuming Countries”)</p>
+</div>
+</div>
