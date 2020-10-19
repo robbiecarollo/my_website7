@@ -3,10 +3,10 @@ categories:
 - ""
 - ""
 date: "2017-10-31T22:26:09-05:00"
-description: Lorem Etiam Nullam
+description: 
 draft: false
-image: weather.jpg
+image: CopyOfmonthly weather.jpg
 keywords: ""
-slug: img
-title: Magna
+slug: CopyOfmonthly weather
+title: Climate Change Homework Example
 ---
