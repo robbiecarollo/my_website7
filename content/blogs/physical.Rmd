@@ -3,9 +3,8 @@
 categories:
 - ""
 - ""
-description: Beer Project
+description: Physical Homework Example
 draft: false
-image: pic10.jpg
 keywords: ""
 slug: physical
 title: Beer Project

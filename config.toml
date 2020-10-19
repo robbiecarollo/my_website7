@@ -123,8 +123,8 @@ disqusShortname = ""
 
     [[params.tiles.showcase]]
       title = "Beer Homework Example"
-      subtitle = "FC Internazionale"
-      image = "Inter.jpg"
+      subtitle = "Top Beer Consuming Countries"
+      image = "beerphoto.jpg"
       url = "blogs/beer"
     # You can make more showcases by copy and pasting the code above
 

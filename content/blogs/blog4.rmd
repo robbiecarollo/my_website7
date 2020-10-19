@@ -7,6 +7,6 @@ description:
 draft: false
 image: CopyOfweather.jpg
 keywords: ""
-slug: CopyOfweather
+slug: climate
 title: Climate Change Homework Example
 ---
