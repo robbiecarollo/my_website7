@@ -1,6 +1,21 @@
 ---
-title: 'Session 4: Homework 2'
-author: "Group 5: Auguste Honore, Stefanie Honig, Sebastian Vargas Rivera, Zihan Xu, Pedro Teixeira Duarte"
+categories:
+- ""
+- ""
+description: Climate Change Homework Example
+draft: false
+image: CopyOfweather.jpg
+keywords: ""
+slug: climate
+title: Climate Change Homework Example
+site: blogdown::blogdown_site
+output: html_document
+---
+
+
+---
+title: 'Climate Change Homework Example'
+author: 
 date: "`r Sys.Date()`"
 output:
   html_document:
