@@ -3,7 +3,6 @@
 categories:
 - ""
 - ""
-description: Physical Activity Homework Example
 draft: false
 image: physical.jpg
 keywords: ""
