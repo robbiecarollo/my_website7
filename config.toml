@@ -95,13 +95,13 @@ disqusShortname = ""
       title = "Climate Change Homework Example"
       subtitle = "Weather Anomalies by Year"
       image = "weather.jpg"
-      url = "img/weather"
+      url = "blogs/climate"
 
     [[params.tiles.showcase]]
       title = "Physical Activity Homework Example"
       subtitle = "Relationship between physical activity and weight"
       image = "Weight.jpg"
-      url = "static/banner"
+      url = "blogs/physical"
 
     [[params.tiles.showcase]]
       title = "Climate Change Homework Example 2"
